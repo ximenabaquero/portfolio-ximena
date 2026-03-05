@@ -1,20 +1,21 @@
-import { CONFIG } from "../config.js";
+import { useLang } from "./LangContext.jsx";
 import Reveal from "./Reveal.jsx";
 
 export default function About() {
+  const { t } = useLang();
   return (
     <div className="section-wrapper" id="about">
       <Reveal>
-        <div className="section-eyebrow">01 — About</div>
+        <div className="section-eyebrow">{t.about.eyebrow}</div>
       </Reveal>
       <Reveal delay={100}>
-        <div className="section-title">Who I am</div>
+        <div className="section-title">{t.about.title}</div>
       </Reveal>
 
       <div className="about-grid">
         <Reveal delay={200}>
           <div className="about-text">
-            {CONFIG.about
+            {t.about.text
               .split("\n")
               .filter(Boolean)
               .map((p, i) => (
@@ -30,7 +31,7 @@ export default function About() {
 
         <Reveal delay={300}>
           <div className="stats-grid">
-            {CONFIG.stats.map((s, i) => (
+            {t.about.stats.map((s, i) => (
               <div key={i} className="stat-box">
                 <div className="stat-num gradient-text">{s.num}</div>
                 <div className="stat-lbl">{s.label}</div>

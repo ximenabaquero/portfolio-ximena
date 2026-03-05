@@ -79,6 +79,23 @@ export const styles = `
     cursor: none;
   }
   .nav-links a:hover { color: var(--accent2); }
+  .lang-toggle {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--accent);
+    background: none;
+    border: 1px solid rgba(108,99,255,0.4);
+    padding: 4px 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: none;
+    transition: all 0.3s;
+    margin-left: 8px;
+  }
+  .lang-toggle:hover {
+    background: rgba(108,99,255,0.15);
+    border-color: var(--accent);
+  }
 
   .hero {
     min-height: 100vh;
@@ -394,40 +411,46 @@ export const styles = `
 
   /* Certs */
   .certs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2px; }
-  .cert-pdf-thumb {
+  .cert-pdf-preview {
     position: relative;
+    margin-top: 16px;
     width: 100%;
-    height: 150px;
-    overflow: hidden;
-    margin-bottom: 16px;
-    border: 1px solid var(--border);
-    background: var(--bg);
-    cursor: pointer;
-  }
-  .cert-pdf-thumb iframe {
-    width: 770px;
-    height: 560px;
-    border: none;
-    transform: scale(0.32);
-    transform-origin: top left;
-    pointer-events: none;
-  }
-  .cert-pdf-thumb-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(8,8,16,0.45);
+    height: 80px;
+    border: 1px solid;
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 14px;
+    padding: 0 18px;
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: var(--bg2);
+  }
+  .cert-pdf-preview:hover { transform: translateY(-2px); }
+  .cert-pdf-icon { flex-shrink: 0; }
+  .cert-pdf-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--muted);
+    text-transform: uppercase;
+    flex: 1;
+  }
+  .cert-pdf-preview-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 18px;
     opacity: 0;
     transition: opacity 0.3s;
     font-family: var(--mono);
     font-size: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: white;
   }
-  .cert-pdf-thumb:hover .cert-pdf-thumb-overlay { opacity: 1; }
+  .cert-pdf-preview:hover .cert-pdf-preview-overlay { opacity: 1; }
   .cert-card {
     background: var(--surface); border: 1px solid var(--border);
     padding: 32px; transition: all 0.3s; position: relative;

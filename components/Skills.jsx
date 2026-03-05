@@ -1,15 +1,17 @@
 import { CONFIG } from "../config.js";
+import { useLang } from "./LangContext.jsx";
 import Reveal from "./Reveal.jsx";
 
 export default function Skills() {
+  const { t } = useLang();
   return (
     <div className="section-wrapper dark" id="skills">
       <div className="inner">
         <Reveal>
-          <div className="section-eyebrow">02 — Stack</div>
+          <div className="section-eyebrow">{t.skills.eyebrow}</div>
         </Reveal>
         <Reveal delay={100}>
-          <div className="section-title">Technologies</div>
+          <div className="section-title">{t.skills.title}</div>
         </Reveal>
         <Reveal delay={200}>
           <div className="skills-categories">

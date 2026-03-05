@@ -1,9 +1,11 @@
 import { CONFIG } from "../config.js";
+import { useLang } from "./LangContext.jsx";
 
 export default function Footer() {
+  const { t } = useLang();
   return (
     <footer>
-      <span style={{ color: "var(--accent)" }}>{CONFIG.name}</span> · Built with React · Bogotá, Colombia · 2025
+      <span style={{ color: "var(--accent)" }}>{CONFIG.name}</span> · {t.footer}
     </footer>
   );
 }

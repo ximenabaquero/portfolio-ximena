@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { CONFIG } from "../config.js";
+import { useLang } from "./LangContext.jsx";
 import Reveal from "./Reveal.jsx";
 
 export default function Languages() {
+  const { t } = useLang();
   const [barWidths, setBarWidths] = useState({});
 
   useEffect(() => {
@@ -24,10 +26,10 @@ export default function Languages() {
   return (
     <div className="section-wrapper" id="languages-section">
       <Reveal>
-        <div className="section-eyebrow">03 — Languages</div>
+        <div className="section-eyebrow">{t.languages.eyebrow}</div>
       </Reveal>
       <Reveal delay={100}>
-        <div className="section-title">Idiomas</div>
+        <div className="section-title">{t.languages.title}</div>
       </Reveal>
       <Reveal delay={200}>
         <div className="lang-list">

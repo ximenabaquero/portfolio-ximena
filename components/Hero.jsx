@@ -1,6 +1,8 @@
 import { CONFIG } from "../config.js";
+import { useLang } from "./LangContext.jsx";
 
 export default function Hero() {
+  const { t } = useLang();
   return (
     <div className="hero">
       <div className="hero-grid" />
@@ -8,22 +10,20 @@ export default function Hero() {
       <div className="hero-glow2" />
       <div className="hero-content">
         <div className="hero-text">
-          <div className="hero-tag">// Available for internships · {CONFIG.location}</div>
+          <div className="hero-tag">{t.hero.tag} · {CONFIG.location}</div>
           <h1 className="hero-name">
             {CONFIG.name.split(" ")[0]}<br />
             <span className="gradient-text">{CONFIG.name.split(" ")[1]}</span>
           </h1>
           <div className="hero-role">
             {CONFIG.role}
-            <span className="sep">×</span>Full-Stack
-            <span className="sep">×</span>Health Tech
+            <span className="sep">×</span>{t.hero.role2}
+            <span className="sep">×</span>{t.hero.role3}
           </div>
-          <p className="hero-desc">
-            Building production SaaS applications for the health sector. Specialized in Next.js, React &amp; TypeScript — with real clients, real systems, real impact.
-          </p>
+          <p className="hero-desc">{t.hero.desc}</p>
           <div className="hero-ctas">
-            <a href="#projects" className="btn-primary">View my work</a>
-            <a href={`mailto:${CONFIG.email}`} className="btn-outline">Get in touch</a>
+            <a href="#projects" className="btn-primary">{t.hero.cta1}</a>
+            <a href={`mailto:${CONFIG.email}`} className="btn-outline">{t.hero.cta2}</a>
           </div>
         </div>
 
