@@ -3,8 +3,8 @@
 // ============================================================
 export const CONFIG = {
   name: "Ximena Baquero",
-  role: "Frontend Developer",
-  subtitle: "Full-Stack · Systems Engineer · Health Tech",
+  role: "Frontend Engineer",
+  subtitle: "Full-Stack Systems · Health Tech",
   location: "Bogotá, Colombia",
   email: "saraximenagilbaquero@gmail.com",
   linkedin: "https://www.linkedin.com/in/sara-ximena-gil-baquero-a3559022b/",
@@ -26,23 +26,19 @@ and requirements gathering — translating real clinical needs into functional, 
   ],
 
   skills: [
-    { category: "Frontend", items: ["Next.js 15", "React 19", "TypeScript", "Nuxt 4", "Vue.js", "HTML/CSS"] },
-    { category: "Backend", items: ["Laravel 11", "PHP 8.2", "Python", "Django", "Node.js", "REST APIs"] },
-    { category: "Database", items: ["MySQL", "PostgreSQL", "NoSQL", "SQL"] },
-    { category: "DevOps & Tools", items: ["Docker", "Git", "GitHub", "Linux", "CI/CD", "Power BI"] },
-    { category: "Security", items: ["RBAC", "AES-256", "Audit Logs", "MFA", "SIEM"] },
+    { category: "Core Stack", items: ["Next.js", "React", "TypeScript", "Laravel", "REST APIs", "MySQL"] },
+    { category: "Experience With", items: ["Vue", "Nuxt", "Python", "Django", "Docker", "Linux", "CI/CD", "GitHub", "Power BI"] },
+    { category: "Security Concepts", items: ["RBAC", "Audit Logs", "AES-256", "MFA"] },
   ],
 
   projects: [
     {
       number: "01",
       name: "XIMCA — Clinic Management System",
-      badge: "In production · 2 active clients",
+      badge: "Production SaaS · 2 clinics currently using the platform",
       badgeColor: "#00d4ff",
-      desc: `SaaS platform for aesthetic medicine clinics. Handles patient management, clinical records 
-with immutability principles, role-based access control (RBAC) for Lead and Collaborator doctors, 
-and digital public profiles. Built with a decoupled architecture: Next.js frontend + Laravel REST API.`,
-      tags: ["Next.js 15", "React 19", "TypeScript", "Laravel 11", "MySQL", "RBAC", "SaaS"],
+      desc: `Healthcare SaaS platform for aesthetic medicine clinics. Handles patient management, immutable medical record history, Role-Based Access Control (RBAC) for physicians and staff, and public digital clinic profiles. Decoupled architecture: Next.js + TypeScript frontend, Laravel REST API backend, MySQL database. Currently used by 2 active clinics.`,
+      tags: ["Next.js", "React", "TypeScript", "Laravel", "MySQL", "RBAC", "SaaS"],
       video: "/demo-ximca.mp4",
 
       links: [
@@ -53,12 +49,10 @@ and digital public profiles. Built with a decoupled architecture: Next.js fronte
     {
       number: "02",
       name: "Plataforma Mosquera Juvenil",
-      badge: "Live · Institutional platform",
+      badge: "Live · Institutional platform — Municipality of Mosquera, Colombia",
       badgeColor: "#ff6b9d",
-      desc: `Institutional youth platform for the municipality of Mosquera, Colombia. 
-Full frontend development with Nuxt 4 and Vue, REST API integration, 
-reusable component architecture, and Git version control.`,
-      tags: ["Nuxt 4", "Vue.js", "TypeScript", "REST API", "Government"],
+      desc: `Frontend development of a government platform centralizing programs and resources for young citizens. Built component-based architecture with Nuxt and Vue, integrated REST APIs, and led Git-based collaborative development.`,
+      tags: ["Nuxt", "Vue.js", "TypeScript", "REST API", "Government"],
 
       links: [
         { label: "View repo", url: "https://github.com/DousoAdmin/pmj-front" },

@@ -18,14 +18,36 @@ export default function About() {
             {t.about.text
               .split("\n")
               .filter(Boolean)
-              .map((p, i) => (
-                <p
-                  key={i}
-                  dangerouslySetInnerHTML={{
-                    __html: p.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>"),
-                  }}
-                />
-              ))}
+              .reduce((acc, line) => {
+                if (line.startsWith("•")) {
+                  const last = acc[acc.length - 1];
+                  if (last?.type === "list") {
+                    last.items.push(line.slice(1).trim());
+                  } else {
+                    acc.push({ type: "list", items: [line.slice(1).trim()] });
+                  }
+                } else {
+                  acc.push({ type: "para", text: line });
+                }
+                return acc;
+              }, [])
+              .map((block, i) => {
+                if (block.type === "list") {
+                  return (
+                    <ul key={i} className="about-list">
+                      {block.items.map((item, j) => <li key={j}>{item}</li>)}
+                    </ul>
+                  );
+                }
+                return (
+                  <p
+                    key={i}
+                    dangerouslySetInnerHTML={{
+                      __html: block.text.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>"),
+                    }}
+                  />
+                );
+              })}
           </div>
         </Reveal>
 

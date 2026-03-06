@@ -358,6 +358,15 @@ export const styles = `
   .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
   .about-text p { font-size: 14px; line-height: 1.9; color: var(--muted); margin-bottom: 16px; }
   .about-text strong { color: var(--text); }
+  .about-list { list-style: none; padding: 0; margin-bottom: 16px; }
+  .about-list li {
+    font-size: 14px; line-height: 1.9; color: var(--muted);
+    padding-left: 20px; position: relative; margin-bottom: 4px;
+  }
+  .about-list li::before {
+    content: '→'; position: absolute; left: 0;
+    color: var(--accent); font-family: var(--mono);
+  }
 
   .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
   .stat-box {

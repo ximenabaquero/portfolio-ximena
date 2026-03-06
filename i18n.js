@@ -5,23 +5,23 @@ export const translations = {
     navIds: ["about", "projects", "skills", "contact"],
 
     hero: {
-      tag: "// Disponible para pasantías",
-      role2: "Full-Stack",
+      tag: "// Disponible para pasantías · Bogotá / Remoto",
+      role2: "Sistemas Full-Stack",
       role3: "Health Tech",
-      desc: "Construyo aplicaciones SaaS en producción para el sector salud. Especializada en Next.js, React y TypeScript — con clientes reales, sistemas reales, impacto real.",
-      cta1: "Ver mi trabajo",
-      cta2: "Contáctame",
+      desc: "Construyo plataformas SaaS en producción para el sector salud. Especializada en Next.js, React y TypeScript, entregando sistemas reales usados por clínicas e instituciones.",
+      cta1: "Ver proyectos",
+      cta2: "Contacto",
     },
 
     about: {
       eyebrow: "01 — Sobre mí",
       title: "Quién soy",
-      text: `Soy estudiante de Ingeniería de Sistemas en la Universidad EAN (8vo semestre, graduación nov. 2026), especializada en desarrollo frontend con experiencia real en producción en el sector health tech.\nTrabajo en equipos colaborativos liderando la capa frontend, gestionando la comunicación directa con clientes y el levantamiento de requisitos — traduciendo necesidades clínicas reales en soluciones funcionales y escalables.`,
+      text: `Soy estudiante de Ingeniería de Sistemas en la Universidad EAN (8vo semestre, graduación nov. 2026), enfocada en ingeniería frontend y sistemas web full-stack.\nActualmente trabajo en software en producción para el sector salud, traduciendo flujos clínicos reales en aplicaciones web escalables.\nMi rol generalmente implica:\n• Liderar la arquitectura frontend\n• Integrar APIs con frameworks modernos\n• Traducir requisitos de clientes y clínicas en sistemas funcionales\nDisfruto construir sistemas que resuelven problemas operacionales reales, especialmente en entornos regulados como el sector salud.`,
       stats: [
-        { num: "2",   label: "Clientes activos" },
-        { num: "2+",  label: "Proyectos en prod." },
+        { num: "2",   label: "Clínicas usando mi software" },
+        { num: "2+",  label: "Plataformas en producción" },
         { num: "15+", label: "Cursos IBM" },
-        { num: "C1",  label: "Nivel inglés" },
+        { num: "C1",  label: "Inglés" },
       ],
     },
 
@@ -41,13 +41,13 @@ export const translations = {
       projectLabel: "Proyecto",
       items: [
         {
-          badge: "En producción · 2 clientes activos",
-          desc: `Plataforma SaaS para clínicas de medicina estética. Gestión de pacientes, historia clínica con principios de inmutabilidad, control de acceso basado en roles (RBAC) para médicos líderes y colaboradores, y perfiles públicos digitales. Arquitectura desacoplada: frontend Next.js + REST API Laravel.`,
+          badge: "SaaS en producción · 2 clínicas usando la plataforma",
+          desc: `Plataforma SaaS de salud para clínicas de medicina estética. Gestión de pacientes, historia clínica con inmutabilidad, control de acceso basado en roles (RBAC) para médicos y personal, y perfiles públicos digitales. Arquitectura desacoplada: frontend Next.js + TypeScript, API REST Laravel, base de datos MySQL. Actualmente en uso por 2 clínicas activas.`,
           links: [{ label: "Repo frontend" }, { label: "Repo backend" }],
         },
         {
-          badge: "En producción · Plataforma institucional",
-          desc: `Plataforma institucional de juventudes del municipio de Mosquera, Colombia. Desarrollo frontend completo con Nuxt 4 y Vue, integración con REST API, arquitectura de componentes reutilizables y control de versiones con Git.`,
+          badge: "En producción · Plataforma institucional — Municipio de Mosquera, Colombia",
+          desc: `Desarrollo frontend de una plataforma gubernamental que centraliza programas y recursos para jóvenes. Arquitectura de componentes con Nuxt y Vue, integración con REST API y desarrollo colaborativo con Git.`,
           links: [{ label: "Ver repositorio" }],
         },
       ],
@@ -77,7 +77,7 @@ export const translations = {
       eyebrow: "07 — Contacto",
       title1: "Construyamos",
       title2: "algo.",
-      sub: "Actualmente busco oportunidades de pasantía en Bogotá o en remoto. Si tienes un proyecto o un rol que se ajuste a mi perfil, me encantaría saber de ti.",
+      sub: "Actualmente busco oportunidades de pasantía en Bogotá o en remoto. Me interesan especialmente roles donde pueda contribuir a sistemas en producción real y productos escalables. Si tienes un proyecto o un rol que se ajuste a mi perfil, me encantaría saber de ti.",
       emailBtn: "Enviar correo",
     },
 
@@ -90,23 +90,23 @@ export const translations = {
     navIds: ["about", "projects", "skills", "contact"],
 
     hero: {
-      tag: "// Available for internships",
-      role2: "Full-Stack",
+      tag: "// Available for internships · Bogotá / Remote",
+      role2: "Full-Stack Systems",
       role3: "Health Tech",
-      desc: "Building production SaaS applications for the health sector. Specialized in Next.js, React & TypeScript — with real clients, real systems, real impact.",
-      cta1: "View my work",
-      cta2: "Get in touch",
+      desc: "I build production SaaS platforms for the healthcare sector. Focused on Next.js, React and TypeScript, delivering real systems used by clinics and institutions.",
+      cta1: "View Projects",
+      cta2: "Contact",
     },
 
     about: {
       eyebrow: "01 — About",
       title: "Who I am",
-      text: `I'm a Systems Engineering student at Universidad EAN (8th semester, graduating Nov. 2026), specialized in frontend development with real production experience in the health-tech sector.\nI work in collaborative teams leading the frontend layer while handling direct client communication and requirements gathering — translating real clinical needs into functional, scalable solutions.`,
+      text: `I'm a Systems Engineering student at Universidad EAN (8th semester, graduating Nov 2026) focused on frontend engineering and full-stack web systems.\nI currently work on production software for the healthcare sector, translating real clinical workflows into scalable web applications.\nMy role usually involves:\n• Leading frontend architecture\n• Integrating APIs with modern frameworks\n• Translating client and clinical requirements into functional systems\nI enjoy building systems that solve real operational problems, especially in regulated environments like healthcare.`,
       stats: [
-        { num: "2",   label: "Active Clients" },
-        { num: "2+",  label: "Projects in Prod." },
+        { num: "2",   label: "Clinics using my software" },
+        { num: "2+",  label: "Production platforms" },
         { num: "15+", label: "IBM Courses" },
-        { num: "C1",  label: "English Level" },
+        { num: "C1",  label: "English" },
       ],
     },
 
@@ -126,13 +126,13 @@ export const translations = {
       projectLabel: "Project",
       items: [
         {
-          badge: "In production · 2 active clients",
-          desc: `SaaS platform for aesthetic medicine clinics. Handles patient management, clinical records with immutability principles, role-based access control (RBAC) for Lead and Collaborator doctors, and digital public profiles. Built with a decoupled architecture: Next.js frontend + Laravel REST API.`,
+          badge: "Production SaaS · 2 clinics currently using the platform",
+          desc: `Healthcare SaaS platform for aesthetic medicine clinics. Handles patient management, immutable medical record history, Role-Based Access Control (RBAC) for physicians and staff, and public digital clinic profiles. Decoupled architecture: Next.js + TypeScript frontend, Laravel REST API backend, MySQL database. Currently used by 2 active clinics.`,
           links: [{ label: "Frontend repo" }, { label: "Backend repo" }],
         },
         {
-          badge: "Live · Institutional platform",
-          desc: `Institutional youth platform for the municipality of Mosquera, Colombia. Full frontend development with Nuxt 4 and Vue, REST API integration, reusable component architecture, and Git version control.`,
+          badge: "Live · Institutional platform — Municipality of Mosquera, Colombia",
+          desc: `Frontend development of a government platform centralizing programs and resources for young citizens. Built component-based architecture with Nuxt and Vue, integrated REST APIs, and led Git-based collaborative development.`,
           links: [{ label: "View repo" }],
         },
       ],
@@ -162,7 +162,7 @@ export const translations = {
       eyebrow: "07 — Contact",
       title1: "Let's build",
       title2: "something.",
-      sub: "I'm currently looking for internship opportunities in Bogotá or remote. If you have a project or a role that matches my profile, I'd love to hear from you.",
+      sub: "I'm currently looking for internship opportunities in Bogotá or remote. I'm particularly interested in roles where I can contribute to real production systems and scalable products. If you have a project or a role that matches my profile, I'd love to hear from you.",
       emailBtn: "Send email",
     },
 
