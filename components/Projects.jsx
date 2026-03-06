@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { CONFIG } from "../config.js";
 import { useLang } from "./LangContext.jsx";
 import Reveal from "./Reveal.jsx";
@@ -5,6 +6,17 @@ import GithubIcon from "./GithubIcon.jsx";
 
 export default function Projects() {
   const { t } = useLang();
+  const videoRefs = useRef({});
+
+  const handleMouseEnter = (i) => {
+    const v = videoRefs.current[i];
+    if (v) { v.currentTime = 0; v.play(); }
+  };
+  const handleMouseLeave = (i) => {
+    const v = videoRefs.current[i];
+    if (v) { v.pause(); v.currentTime = 0; }
+  };
+
   return (
     <div className="section-wrapper dark" id="projects">
       <div className="inner">
@@ -20,7 +32,11 @@ export default function Projects() {
             const tp = t.projects.items[i];
             return (
             <Reveal key={i} delay={i * 100}>
-              <div className="project-card">
+              <div
+                className="project-card"
+                onMouseEnter={() => p.videoLink && handleMouseEnter(i)}
+                onMouseLeave={() => p.videoLink && handleMouseLeave(i)}
+              >
                 <div>
                   <div className="proj-num">{t.projects.projectLabel} {p.number}</div>
                   <div className="proj-name">{p.name}</div>
@@ -40,6 +56,20 @@ export default function Projects() {
                       <span key={j} className="proj-tag">{tag}</span>
                     ))}
                   </div>
+                  {p.videoLink && (
+                    <div className="proj-video-wrap">
+                      <video
+                        ref={el => videoRefs.current[i] = el}
+                        src={p.videoLink}
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
+                        className="proj-video"
+                      />
+                      <div className="proj-video-hint">▶ Demo</div>
+                    </div>
+                  )}
                 </div>
                 <div className="proj-links">
                   {p.links.map((l, j) => (

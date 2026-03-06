@@ -8,7 +8,6 @@ import Skills from "./components/Skills.jsx";
 import Languages from "./components/Languages.jsx";
 import Projects from "./components/Projects.jsx";
 import Certifications from "./components/Certifications.jsx";
-import Timeline from "./components/Timeline.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 
@@ -24,7 +23,6 @@ export default function Portfolio() {
       <Languages />
       <Projects />
       <Certifications />
-      <Timeline />
       <Contact />
       <Footer />
     </LangProvider>

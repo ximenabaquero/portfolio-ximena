@@ -43,6 +43,7 @@ and requirements gathering — translating real clinical needs into functional, 
 with immutability principles, role-based access control (RBAC) for Lead and Collaborator doctors, 
 and digital public profiles. Built with a decoupled architecture: Next.js frontend + Laravel REST API.`,
       tags: ["Next.js 15", "React 19", "TypeScript", "Laravel 11", "MySQL", "RBAC", "SaaS"],
+      videoLink: "/demo-ximca.mp4",
       links: [
         { label: "Frontend repo", url: "https://github.com/ximenabaquero/Clinic-management-system-front" },
         { label: "Backend repo", url: "https://github.com/karol-cc/Clinic-management-system-back" },
@@ -57,6 +58,7 @@ and digital public profiles. Built with a decoupled architecture: Next.js fronte
 Full frontend development with Nuxt 4 and Vue, REST API integration, 
 reusable component architecture, and Git version control.`,
       tags: ["Nuxt 4", "Vue.js", "TypeScript", "REST API", "Government"],
+      videoLink: null,
       links: [
         { label: "View repo", url: "https://github.com/DousoAdmin/pmj-front" },
       ],
@@ -84,16 +86,16 @@ reusable component architecture, and Git version control.`,
       issuer: "EF Education First",
       name: "EF SET English Certificate — C1 Proficient",
       desc: "Score 72/100 · Full professional working capacity in English. CEFR scale.",
-      credentialLink: "https://cert.efset.org/es/yGWTHd",
-      pdfLink: null, // ← ADD PDF link here
+      credentialLink: "https://cert.efset.org/en/URoZpZ",
+      pdfLink: "/EF SET Certificate.pdf",
       color: "#00d4ff",
     },
     {
       issuer: "Universidad EAN",
       name: "Análisis de Datos en Power BI",
       desc: "Data visualization, interactive dashboards and business intelligence reports. Feb. 2026.",
-      credentialLink: null, // ← ADD link here when available
-      pdfLink: null, // ← ADD PDF link here
+      credentialLink: "https://eanx.co/certificate/wCPfYqhpDj",
+      pdfLink: "/Análisis de Datos en Power BI.pdf",
       color: "#ff6b9d",
     },
   ],
