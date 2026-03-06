@@ -43,7 +43,8 @@ and requirements gathering — translating real clinical needs into functional, 
 with immutability principles, role-based access control (RBAC) for Lead and Collaborator doctors, 
 and digital public profiles. Built with a decoupled architecture: Next.js frontend + Laravel REST API.`,
       tags: ["Next.js 15", "React 19", "TypeScript", "Laravel 11", "MySQL", "RBAC", "SaaS"],
-      videoLink: "/demo-ximca.mp4",
+      video: "/demo-ximca.mp4",
+
       links: [
         { label: "Frontend repo", url: "https://github.com/ximenabaquero/Clinic-management-system-front" },
         { label: "Backend repo", url: "https://github.com/karol-cc/Clinic-management-system-back" },
@@ -58,7 +59,7 @@ and digital public profiles. Built with a decoupled architecture: Next.js fronte
 Full frontend development with Nuxt 4 and Vue, REST API integration, 
 reusable component architecture, and Git version control.`,
       tags: ["Nuxt 4", "Vue.js", "TypeScript", "REST API", "Government"],
-      videoLink: null,
+
       links: [
         { label: "View repo", url: "https://github.com/DousoAdmin/pmj-front" },
       ],
